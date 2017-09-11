@@ -25,3 +25,19 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+TODO LIST :
+
+- Ajouter une tâche
+- Supprimer une tâche
+- Déplacer une tâche
+- Terminer une tâche
+- Afficher la liste des tâches
+- Filtrer les tâches par status
+
+Components :
+
+- task-list
+- task
+
