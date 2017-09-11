@@ -1,6 +1,7 @@
 <template>
-  <div>
-  </div>
+  <li>
+    {{label}}<a>X</a>
+  </li>
 </template>
 
 <script src="./task.js"></script>
