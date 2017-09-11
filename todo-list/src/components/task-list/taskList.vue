@@ -1,9 +1,13 @@
 <template>
-  <ul id="Todo">
-    <li v-for="task in tasks">
-    <task v-bind:label="tasks.label"/>
-    </li>
-  </ul>
+  <div>
+    <input/>
+    <button>Add</button>
+    <ul>
+      <li v-for="task in tasks">
+      <task v-bind:label="task.label" v-bind:closed="task.closed"/>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script src="./taskList.js"></script>

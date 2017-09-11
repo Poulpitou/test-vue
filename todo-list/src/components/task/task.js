@@ -1,3 +1,7 @@
 export default {
-  name: 'task'
+  name: 'task',
+  props: ['label', 'closed'],
+  methods: {
+
+  }
 }

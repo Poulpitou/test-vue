@@ -1,6 +1,6 @@
 <template>
   <li>
-    {{label}}<a>X</a>
+    {{label}}, {{closed}} | <button>Delete</button>
   </li>
 </template>
 
