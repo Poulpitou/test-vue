@@ -1,7 +1,8 @@
 <template>
-  <li>
-    {{label}}, {{closed}} | <button>Delete</button>
-  </li>
+  <span v-bind:class="{ closed: closed }">
+    {{label}}
+    <input type="checkbox" v-model="closed"/>
+  </span>
 </template>
 
 <script src="./task.js"></script>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <input/>
-    <button>Add</button>
-    <ul>
-      <li v-for="task in tasks">
-      <task v-bind:label="task.label" v-bind:closed="task.closed"/>
+    <input v-model="inputLabel" v-on:keyup.enter="addTask"/>
+    <button v-on:click="addTask">Add</button>
+    <ol>
+      <li v-for="(task, index) in tasks">
+      <task v-bind:label="task.label" v-bind:closed="task.closed" /> <button v-on:click="deleteTask(index)">Delete</button>
       </li>
-    </ul>
+    </ol>
   </div>
 </template>
 
