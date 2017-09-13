@@ -20,7 +20,15 @@ export default {
     },
     deleteTask: function (index) {
       this.tasks.splice(index, 1);
-    }
+    },
+    upTask: function (index) {
+      const removedTask = this.tasks.splice(index, 1);
+      this.tasks.splice(index - 1, 0, removedTask[0]);
+    },
+    downTask: function (index) {
+      const removedTask = this.tasks.splice(index, 1);
+      this.tasks.splice(index + 1, 0, removedTask[0]);
+    },
   },
   components: {
     task
